@@ -4,4 +4,4 @@ WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 ENTRYPOINT [ "python", "bot.py" ]
-EXPOSE 80:80
+EXPOSE 80

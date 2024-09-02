@@ -25,9 +25,9 @@ docker build . -t type_image_name_here
 docker images
 ```
 
-5. Запустите контейнер на основе вашего образа в **daemon** режиме с помощью команды
+5. Запустите контейнер на основе вашего образа в фоновом **detached mode** режиме с помощью команды
 ```
-docker run -d type_image_id_here
+docker run -d -p 80:80 type_image_id_here
 ```
 
 6. Убедиться, что контейнер успешно запущен и работает можно по команде
